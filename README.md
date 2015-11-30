@@ -8,6 +8,8 @@ Add a test dependency on imlint to your package's package.xml:
 ```
 <test_depend>imlint</test_depend>
 ```
+**Note:** It is recommended to use version 2 of the package manifest format ([REP-140](http://www.ros.org/reps/rep-0140.html)) for correct handling of dependencies specified in the `<test_depend>` element.
+
 In your package's CMakeLists.txt file, include imlint as one of your catkin
 component dependencies, ideally you put all imlint related cmake code within a 
 ```if (CATKIN_ENABLE_TESTING) ... endif()``` block:
