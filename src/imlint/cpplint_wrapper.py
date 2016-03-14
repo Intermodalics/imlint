@@ -80,9 +80,10 @@ def GetHeaderGuardCPPVariable(fn, filename):
             break
         elif head.endswith('src'):
             if cpplint._root:
-                var_parts.insert(0,cpplint._root)
+                var_parts.insert(0, cpplint._root)
             break
     return re.sub(r'[-./\s]', '_', "_".join(var_parts)).upper()
+
 
 @patch(cpplint)
 def CheckIncludeLine(fn, filename, clean_lines, linenum, include_state, error):
