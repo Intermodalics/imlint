@@ -20,6 +20,7 @@ cat <<ENDXML > $RESULTS_FILE
 ENDXML
   exit 0
 else
+  echo "$LINTER_OUTPUT"
   # Lint failed
   # TODO: This output could be more helpful; really just a first cut.
  cat <<ENDXML > $RESULTS_FILE
