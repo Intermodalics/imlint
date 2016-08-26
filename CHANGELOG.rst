@@ -2,6 +2,12 @@
 Changelog for package imlint
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.11.1 (2016-08-26)
+-------------------
+* Also print to stdout if there's an error
+* fix spacings
+* Contributors: Ruben Smits
+
 0.11.0 (2015-11-25)
 -------------------
 * Forked roslint and applied changes to check for Intermodalics (almost Google) style
